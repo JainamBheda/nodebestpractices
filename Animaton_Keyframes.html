@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes and animation</title>
+    <style>
+        .container{
+            display: flex;
+            background-color:rgb(95, 232, 230);
+            width:900px;
+            height: 200px;
+        }
+        .box{
+            border-radius: 67px;
+            color:black;
+            background-color:rgb(32, 129, 204);       
+            border: 3px solid rebeccapurple;
+            position: relative;
+            animation-name:Jainam ;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: alternate;
+            /* animation-timing-function: ease-in-out; */
+
+        }
+        @keyframes Jainam{
+           
+            0%{
+               top:0px;
+               left:0px; 
+            }
+            25%{
+                top:250px;
+                left:0px;
+            }
+            75%{
+                top:250px;
+                left:250px;
+                
+            }
+            100%{
+                top:0px;
+                left:250px;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"><h2>I Love you Mumma</h2></div>
+    </div>
+</body>
+</html>
